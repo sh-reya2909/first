@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .product{
+            border: 2px solid black;
+            width:250px;
+            text-align: center;
+            border-radius: 10px;
+            margin:5px;
+            padding: 15px;
+            background-color:rgb(44,5,5);
+            /*box shadow= X axis Y axis spread radius color*/
+            box-shadow:4px 4px 8px rgb(229,6,6) ;
+        }
+        .product img{
+            width:100%;
+            height:250px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 2px solid white;
+        }
+        .product button{
+            background-color: yellow;
+            border: none;
+            padding:10px;
+            border-radius: 12px;
+        }
+        .product h2{
+            text-decoration: none;
+            color: white;
+        }
+        .product p{
+            color: white;
+        }
+        body{
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .product button:hover{
+            transform: scale(1.2);
+        }
+        .product:hover{
+            box-shadow: 4px 4px 10px blue;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <img src="https://images.pexels.com/photos/27860686/pexels-photo-27860686.jpeg" >
+        <h2>Cappuccino</h2>
+        <p>Rs 199.00</p>
+        <button>Buy Now</button>
+    </div>
+     <div class="product">
+        <img src="https://images.pexels.com/photos/27355749/pexels-photo-27355749.jpeg ">
+        <h2>Cookie</h2>
+        <p>Rs 299.00</p>
+        <button>Buy Now</button>
+    </div>
+     <div class="product">
+        <img src="https://images.pexels.com/photos/8964308/pexels-photo-8964308.jpeg"  >
+        <h2>CupCake</h2>
+        <p>Rs 199.00</p>
+        <button>Buy Now</button>
+    </div>
+     <div class="product">
+        <img src="https://images.pexels.com/photos/15747864/pexels-photo-15747864.jpeg" >
+        <h2>Ice cream</h2>
+        <p>Rs 99.00</p>
+        <button>Buy Now</button>
+    </div>
+</body>
+</html>
